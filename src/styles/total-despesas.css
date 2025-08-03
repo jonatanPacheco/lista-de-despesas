@@ -1,0 +1,28 @@
+.total-despesas {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .total-despesas__titulo {
+    align-self: flex-start;
+  }
+
+  .total-despesas__valor {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    width: 30%;
+    height: 4rem;
+  }
+}
+
+@media (width <= 500px) {
+  .total-despesas {
+    .total-despesas__valor {
+      width: 60%;
+    }
+  }
+}

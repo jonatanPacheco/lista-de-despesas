@@ -1,0 +1,73 @@
+.lista-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-item__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+
+  .lista-despesas__container {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  .icon-container {
+    width: 15%;
+
+    .lista-item__icon {
+      border-color: var(--cor-terciaria);
+      color: var(--cor-terciaria);
+      padding: 0.2rem 0.3rem;
+    }
+  }
+}
+
+.lista-item__bloco {
+  text-align: start;
+  width: 30%;
+}
+
+.icon-container {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8em;
+}
+
+@media (width <= 768px) {
+  .lista-item {
+    .lista-despesas__container {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (width <= 500px) {
+  .lista-item {
+    display: flex;
+    flex-direction: column;
+    .lista-item__container {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem 0;
+
+      .lista-despesas__container {
+        display: flex;
+        width: 100%;
+
+        .lista-item__bloco {
+          width: 60%;
+          margin-bottom: 0.5rem;
+        }
+
+        .lista-item__bloco:nth-last-child(1) {
+          width: 40%;
+        }
+      }
+    }
+  }
+}

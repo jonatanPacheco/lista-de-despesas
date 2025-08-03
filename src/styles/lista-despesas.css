@@ -1,0 +1,28 @@
+.lista-despesas {
+  display: flex;
+  flex-direction: column;
+
+  .lista-cabecalho {
+    display: flex;
+    justify-content: space-between;
+
+    .lista-cabecalho__bloco {
+      width: 30%;
+      text-align: center;
+    }
+  }
+
+  .lista-despesas__adicionadas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (width <= 500px) {
+  .lista-despesas {
+    .lista-cabecalho__bloco:last-child {
+      display: none;
+    }
+  }
+}

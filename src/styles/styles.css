@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Genos:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("delete-btn.css");
+@import url("cabecalho.css");
+@import url("formulario.css");
+@import url("lista-despesas.css");
+@import url("total-despesas.css");
+@import url("lista_item.css");
+@import url("rodape.css");
+
+:root {
+  --cor-primaria: #ffffff;
+  --cor-secundaria: #000000;
+  --cor-terciaria: #cb0404;
+  --background-section: #f8fafc;
+  --bg-dark: #363540;
+  --bg-delete-hover: #ff9b17;
+  --border-color: #9aa6b2;
+  --btn-color: #9b7ebd;
+  --font-color: #9aa6b2;
+  --delete-hover-color: #f9e400;
+  --font-titulo: "Bruno Ace SC", sans-serif;
+  --font-principal: "Genos", sans-serif;
+  --input-bg: #eaefef;
+  --logo-bg: #471396;
+  --logo-bg-dark: #1a1a1d;
+  --switch--shadow-bg: #dddddd;
+  --switch--shadow-before-bg: #f1f1f1;
+  --switch--shadow-checked-bg: #363540;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+body {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--font-color);
+  font-family: var(--font-principal);
+  background-image: url(../img/bg-img__light.jpg);
+  background-size: contain;
+}
+
+.secao {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  background-color: var(--background-section);
+  box-shadow: 10px 10px 5px var(--border-color);
+}
+
+.linha {
+  border-color: var(--border-color);
+  width: 100%;
+  margin: 0;
+}
+
+.dark-mode {
+  background-image: url(../img/bg-dark__mode.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .titulo {
+    background-color: var(--cor-secundaria);
+  }
+
+  .campo {
+    background-color: var(--input-bg);
+  }
+
+  .secao,
+  .delete-btn {
+    background-color: var(--bg-dark);
+  }
+
+  .delete-btn {
+    border-color: var(--border-color);
+    color: var(--font-color);
+  }
+
+  .logo {
+    background-color: var(--logo-bg-dark);
+  }
+}
+
+@media (width <= 1024px) {
+  .secao {
+    font-size: 0.5rem;
+  }
+}
+
+@media (width <= 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  .secao {
+    padding: 1rem;
+  }
+}
+
+@media (width <= 500px) {
+  .secao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

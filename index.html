@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <title>Despesas</title>
+  </head>
+  <body id="bg-container">
+    <header class="cabecalho">
+      <h1 id="titulo" class="titulo">Lista de despesas</h1>
+      <div class="switch-container">
+        <span class="dark-mode__title">Dark mode</span>
+        <input
+          id="switch-shadow"
+          class="switch switch--shadow"
+          type="checkbox"
+        />
+        <label for="switch-shadow"></label>
+      </div>
+    </header>
+    <form id="form" class="formulario secao">
+      <div class="form-item">
+        <h2 class="form-titulo">Adicione uma nova despesa</h2>
+        <input type="text" id="nome" placeholder="Nome despesa" class="campo" />
+      </div>
+      <div class="form-item">
+        <h2 class="form-titulo">Valor</h2>
+        <input
+          type="number"
+          step="0.01"
+          id="valor"
+          placeholder="valor da despesa"
+          class="campo"
+        />
+      </div>
+      <button class="form-btn" id="form-btn">Adicionar despesa</button>
+    </form>
+    <section class="lista-despesas secao">
+      <div class="lista-cabecalho">
+        <h2 class="lista-cabecalho__bloco">Nome da despesa</h2>
+        <h2 class="lista-cabecalho__bloco">Valor</h2>
+        <h2 class="lista-cabecalho__bloco">Ações</h2>
+      </div>
+      <hr class="linha" />
+      <ul id="lista" class="lista-despesas__adicionadas"></ul>
+    </section>
+    <div class="delete-btn__container">
+      <button id="deletar-lista__btn" class="delete-btn">Deletar lista</button>
+    </div>
+    <section class="total-despesas secao">
+      <h2 class="total-despesas__titulo">Total de despesas do mês:</h2>
+      <span id="valor-total" class="total-despesas__valor">R$</span>
+    </section>
+    <footer class="rodape">
+      <div class="logo-container">
+        <h2 class="logo">Jonatan<span class="logo-span">Dev</span></h2>
+      </div>
+    </footer>
+    <script src="src/script.js"></script>
+  </body>
+</html>

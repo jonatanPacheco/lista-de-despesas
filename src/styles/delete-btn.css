@@ -1,0 +1,19 @@
+.delete-btn__container {
+  margin: 0 auto;
+  padding: 2rem;
+
+  .delete-btn {
+    width: 200px;
+    height: 80px;
+    border-radius: 16px;
+    border: 1px solid var(--cor-secundaria);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+  }
+
+  > .delete-btn:hover {
+    border-color: var(--cor-terciaria);
+    color: var(--delete-hover-color);
+    background-color: var(--bg-delete-hover);
+  }
+}
